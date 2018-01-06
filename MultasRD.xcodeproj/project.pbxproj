@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18D10D022001660800F2118E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D10D012001660800F2118E /* AppDelegate.swift */; };
+		18D10D042001660800F2118E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D10D032001660800F2118E /* ViewController.swift */; };
+		18D10D072001660800F2118E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D10D052001660800F2118E /* Main.storyboard */; };
+		18D10D092001660800F2118E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D10D082001660800F2118E /* Assets.xcassets */; };
+		18D10D0C2001660800F2118E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D10D0A2001660800F2118E /* LaunchScreen.storyboard */; };
+		18D10D172001660800F2118E /* MultasRDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D10D162001660800F2118E /* MultasRDTests.swift */; };
+		18D10D222001660800F2118E /* MultasRDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D10D212001660800F2118E /* MultasRDUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18D10D132001660800F2118E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18D10CF62001660800F2118E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D10CFD2001660800F2118E;
+			remoteInfo = MultasRD;
+		};
+		18D10D1E2001660800F2118E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18D10CF62001660800F2118E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D10CFD2001660800F2118E;
+			remoteInfo = MultasRD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18D10CFE2001660800F2118E /* MultasRD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultasRD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D10D012001660800F2118E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18D10D032001660800F2118E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18D10D062001660800F2118E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18D10D082001660800F2118E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18D10D0B2001660800F2118E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18D10D0D2001660800F2118E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D10D122001660800F2118E /* MultasRDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultasRDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D10D162001660800F2118E /* MultasRDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultasRDTests.swift; sourceTree = "<group>"; };
+		18D10D182001660800F2118E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D10D1D2001660800F2118E /* MultasRDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultasRDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D10D212001660800F2118E /* MultasRDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultasRDUITests.swift; sourceTree = "<group>"; };
+		18D10D232001660800F2118E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18D10CFB2001660800F2118E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D10D0F2001660800F2118E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D10D1A2001660800F2118E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18D10CF52001660800F2118E = {
+			isa = PBXGroup;
+			children = (
+				18D10D002001660800F2118E /* MultasRD */,
+				18D10D152001660800F2118E /* MultasRDTests */,
+				18D10D202001660800F2118E /* MultasRDUITests */,
+				18D10CFF2001660800F2118E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18D10CFF2001660800F2118E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D10CFE2001660800F2118E /* MultasRD.app */,
+				18D10D122001660800F2118E /* MultasRDTests.xctest */,
+				18D10D1D2001660800F2118E /* MultasRDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D10D002001660800F2118E /* MultasRD */ = {
+			isa = PBXGroup;
+			children = (
+				18D10D012001660800F2118E /* AppDelegate.swift */,
+				18D10D032001660800F2118E /* ViewController.swift */,
+				18D10D052001660800F2118E /* Main.storyboard */,
+				18D10D082001660800F2118E /* Assets.xcassets */,
+				18D10D0A2001660800F2118E /* LaunchScreen.storyboard */,
+				18D10D0D2001660800F2118E /* Info.plist */,
+			);
+			path = MultasRD;
+			sourceTree = "<group>";
+		};
+		18D10D152001660800F2118E /* MultasRDTests */ = {
+			isa = PBXGroup;
+			children = (
+				18D10D162001660800F2118E /* MultasRDTests.swift */,
+				18D10D182001660800F2118E /* Info.plist */,
+			);
+			path = MultasRDTests;
+			sourceTree = "<group>";
+		};
+		18D10D202001660800F2118E /* MultasRDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18D10D212001660800F2118E /* MultasRDUITests.swift */,
+				18D10D232001660800F2118E /* Info.plist */,
+			);
+			path = MultasRDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18D10CFD2001660800F2118E /* MultasRD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D10D262001660800F2118E /* Build configuration list for PBXNativeTarget "MultasRD" */;
+			buildPhases = (
+				18D10CFA2001660800F2118E /* Sources */,
+				18D10CFB2001660800F2118E /* Frameworks */,
+				18D10CFC2001660800F2118E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultasRD;
+			productName = MultasRD;
+			productReference = 18D10CFE2001660800F2118E /* MultasRD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18D10D112001660800F2118E /* MultasRDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D10D292001660800F2118E /* Build configuration list for PBXNativeTarget "MultasRDTests" */;
+			buildPhases = (
+				18D10D0E2001660800F2118E /* Sources */,
+				18D10D0F2001660800F2118E /* Frameworks */,
+				18D10D102001660800F2118E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18D10D142001660800F2118E /* PBXTargetDependency */,
+			);
+			name = MultasRDTests;
+			productName = MultasRDTests;
+			productReference = 18D10D122001660800F2118E /* MultasRDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18D10D1C2001660800F2118E /* MultasRDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D10D2C2001660800F2118E /* Build configuration list for PBXNativeTarget "MultasRDUITests" */;
+			buildPhases = (
+				18D10D192001660800F2118E /* Sources */,
+				18D10D1A2001660800F2118E /* Frameworks */,
+				18D10D1B2001660800F2118E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18D10D1F2001660800F2118E /* PBXTargetDependency */,
+			);
+			name = MultasRDUITests;
+			productName = MultasRDUITests;
+			productReference = 18D10D1D2001660800F2118E /* MultasRDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18D10CF62001660800F2118E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Luis Tejada";
+				TargetAttributes = {
+					18D10CFD2001660800F2118E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					18D10D112001660800F2118E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18D10CFD2001660800F2118E;
+					};
+					18D10D1C2001660800F2118E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18D10CFD2001660800F2118E;
+					};
+				};
+			};
+			buildConfigurationList = 18D10CF92001660800F2118E /* Build configuration list for PBXProject "MultasRD" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18D10CF52001660800F2118E;
+			productRefGroup = 18D10CFF2001660800F2118E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18D10CFD2001660800F2118E /* MultasRD */,
+				18D10D112001660800F2118E /* MultasRDTests */,
+				18D10D1C2001660800F2118E /* MultasRDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18D10CFC2001660800F2118E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D10D0C2001660800F2118E /* LaunchScreen.storyboard in Resources */,
+				18D10D092001660800F2118E /* Assets.xcassets in Resources */,
+				18D10D072001660800F2118E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D10D102001660800F2118E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D10D1B2001660800F2118E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D10CFA2001660800F2118E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D10D042001660800F2118E /* ViewController.swift in Sources */,
+				18D10D022001660800F2118E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D10D0E2001660800F2118E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D10D172001660800F2118E /* MultasRDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D10D192001660800F2118E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D10D222001660800F2118E /* MultasRDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18D10D142001660800F2118E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18D10CFD2001660800F2118E /* MultasRD */;
+			targetProxy = 18D10D132001660800F2118E /* PBXContainerItemProxy */;
+		};
+		18D10D1F2001660800F2118E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18D10CFD2001660800F2118E /* MultasRD */;
+			targetProxy = 18D10D1E2001660800F2118E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18D10D052001660800F2118E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D10D062001660800F2118E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18D10D0A2001660800F2118E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D10D0B2001660800F2118E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18D10D242001660800F2118E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18D10D252001660800F2118E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18D10D272001660800F2118E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPWYF22VV5;
+				INFOPLIST_FILE = MultasRD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luistejada.MultasRD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18D10D282001660800F2118E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPWYF22VV5;
+				INFOPLIST_FILE = MultasRD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luistejada.MultasRD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18D10D2A2001660800F2118E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPWYF22VV5;
+				INFOPLIST_FILE = MultasRDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luistejada.MultasRDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultasRD.app/MultasRD";
+			};
+			name = Debug;
+		};
+		18D10D2B2001660800F2118E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPWYF22VV5;
+				INFOPLIST_FILE = MultasRDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luistejada.MultasRDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultasRD.app/MultasRD";
+			};
+			name = Release;
+		};
+		18D10D2D2001660800F2118E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPWYF22VV5;
+				INFOPLIST_FILE = MultasRDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luistejada.MultasRDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultasRD;
+			};
+			name = Debug;
+		};
+		18D10D2E2001660800F2118E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPWYF22VV5;
+				INFOPLIST_FILE = MultasRDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luistejada.MultasRDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultasRD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D10CF92001660800F2118E /* Build configuration list for PBXProject "MultasRD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D10D242001660800F2118E /* Debug */,
+				18D10D252001660800F2118E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D10D262001660800F2118E /* Build configuration list for PBXNativeTarget "MultasRD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D10D272001660800F2118E /* Debug */,
+				18D10D282001660800F2118E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D10D292001660800F2118E /* Build configuration list for PBXNativeTarget "MultasRDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D10D2A2001660800F2118E /* Debug */,
+				18D10D2B2001660800F2118E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D10D2C2001660800F2118E /* Build configuration list for PBXNativeTarget "MultasRDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D10D2D2001660800F2118E /* Debug */,
+				18D10D2E2001660800F2118E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18D10CF62001660800F2118E /* Project object */;
+}
