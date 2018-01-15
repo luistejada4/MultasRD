@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     var tableView : UITableView!
     var lastContentOffset : CGFloat!
     var isScrollToTop : Bool!
+    var multaModalView : UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -135,41 +137,96 @@ extension ViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "multaCell", for: indexPath) as! MultaTableTableViewCell
-        cell.layer.shadowOffset = CGSize(width: 0, height: 0)
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowRadius = 4
-        cell.layer.shadowOpacity = 0.25
-        cell.layer.masksToBounds = false
-        cell.clipsToBounds = false
-        cell.imageView?.image = #imageLiteral(resourceName: "ic_multas").tinted(with: #colorLiteral(red: 1, green: 0.9930704543, blue: 0.8873265226, alpha: 1))
-        cell.imageView?.contentMode = .scaleAspectFit
-        cell.imageView?.backgroundColor = UIColor.clear
-        cell.backgroundColor = UIColor.clear
+        
+        if !cell.presented {
+            
+            cell.layer.shadowOffset = CGSize(width: 0, height: 0)
+            cell.layer.shadowColor = UIColor.black.cgColor
+            cell.layer.shadowRadius = 3
+            cell.layer.shadowOpacity = 0.15
+            cell.layer.masksToBounds = false
+            cell.clipsToBounds = false
+            cell.imageView?.image = #imageLiteral(resourceName: "ic_multas").tinted(with: #colorLiteral(red: 1, green: 0.9930704543, blue: 0.8873265226, alpha: 1))
+            cell.imageView?.contentMode = .scaleAspectFit
+            cell.imageView?.backgroundColor = UIColor.clear
+            cell.backgroundColor = UIColor.clear
+            cell.selectionStyle = .gray
+        }
+        if !cell.presented {
+            
+            cell.presented = true
+        }
         return cell
     }
 }
 extension ViewController : UITableViewDelegate {
     
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if self.multaModalView != nil {
+            self.multaModalView.removeFromSuperview()
+            self.multaModalView = nil
+        }
+        let cellRect = tableView.rectForRow(at: indexPath)
+        let realRect = tableView.convert(cellRect, to: tableView.superview)
+        self.multaModalView = UIView(frame: realRect)
+        self.multaModalView.backgroundColor = UIColor.white
+        self.multaModalView.layer.cornerRadius = 5
+        self.multaModalView.clipsToBounds = true
+        self.view.addSubview(self.multaModalView)
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            
+            self.multaModalView.center = self.view.center
+            
+        }) { (completion) in
+            
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
+                
+                self.multaModalView.bounds.size.width = self.multaModalView.frame.width - 30
+                self.multaModalView.bounds.size.height = self.view.frame.height / 2
+                self.multaModalView.center = self.view.center
+                
+                
+            }, completion: { (completion) in
+                
+            })
+        }
+        
+    }
+
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-        let multaCell = cell as! MultaTableTableViewCell
-        multaCell.cellContainer.alpha = 1
-        if self.isScrollToTop {
-        multaCell.center.y = multaCell.center.y + multaCell.bounds.height
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
-
-            multaCell.center.y = multaCell.center.y - multaCell.bounds.height
-            multaCell.cellContainer.alpha = 0.5
-            }, completion: nil)
-        } else {
+        let  height = tableView.frame.size.height
+        let contentYoffset = tableView.contentOffset.y
+        let distanceFromBottom = tableView.contentSize.height - contentYoffset
+        
+        if distanceFromBottom > height { //Falta por reparar
             
-            multaCell.center.y = multaCell.center.y - multaCell.bounds.height
-            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
-                
+            let multaCell = cell as! MultaTableTableViewCell
+            multaCell.cellContainer.alpha = 1
+            if self.isScrollToTop {
                 multaCell.center.y = multaCell.center.y + multaCell.bounds.height
-                multaCell.cellContainer.alpha = 0.5
-            }, completion: nil)
+                UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
+                    
+                    multaCell.center.y = multaCell.center.y - multaCell.bounds.height
+                    multaCell.cellContainer.alpha = 0.5
+                }, completion: nil)
+            } else {
+                
+                multaCell.center.y = multaCell.center.y - multaCell.bounds.height
+                UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
+                    
+                    multaCell.center.y = multaCell.center.y + multaCell.bounds.height
+                    multaCell.cellContainer.alpha = 0.5
+                }, completion: nil)
+            }
         }
+        
     }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         

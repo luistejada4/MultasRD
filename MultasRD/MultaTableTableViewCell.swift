@@ -14,11 +14,13 @@ class MultaTableTableViewCell: UITableViewCell {
     var cellImage : UIImageView!
     var titleMulta : UILabel!
     var precio : UILabel!
+    var presented : Bool!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         cellContainer = UIView(frame: CGRect.zero)
         cellContainer.backgroundColor = UIColor.white
+        presented = false
         contentView.addSubview(cellContainer)
     }
     
@@ -28,7 +30,6 @@ class MultaTableTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        print("Hola!")
         
     }
     override func prepareForReuse() {
@@ -37,6 +38,7 @@ class MultaTableTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         cellContainer.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height - 3)
+        
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
